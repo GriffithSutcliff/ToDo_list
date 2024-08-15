@@ -33,7 +33,7 @@ function Todo(props) {
         if (filter === 'active') {
           return todo.state === 'active';
         }
-        return true; // all
+        return true;
     });
 
     const handleFilterChange = (newFilter) => {
@@ -58,7 +58,7 @@ function Todo(props) {
                 ))}
             </div>
             <div className='todo-info'>
-                <div>{`${filteredTodos.length}`} items left</div>
+                <div className='length'>{`${filteredTodos.length}`} items left</div>
                     <div className='info-middle'>
                         <div className={`filter ${filter === 'all' ? 'active' : ''}`} onClick={() => handleFilterChange('all')}>All</div>
                         <div className={`filter ${filter === 'active' ? 'active' : ''}`} onClick={() => handleFilterChange('active')}>Active</div>

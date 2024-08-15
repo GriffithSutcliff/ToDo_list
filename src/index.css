@@ -24,6 +24,8 @@ body{
 }
 .todo-list{
   width: 539px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 .icon{
   width: 26px;
@@ -106,4 +108,25 @@ body{
 }
 .filter.active{
   color: rgb(51, 51, 255);
+}
+@media (max-width:320px){
+  .todo-list{
+    width: 239px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .filter, .length{
+    margin-bottom: 10px;
+  }
+  .todo-maker{
+    font-size: 12px;
+  }
+  .todo-info{
+    flex-direction: column;
+    height: unset;
+  }
+  .info-middle{
+    flex-direction: column;
+    text-align: center;
+  }
 }
